@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="header::top(${title})">
+    <title>Dummy Title</title>
+</head>
+<body>
+<script>
+document.execCommand('ClearAuthenticationCache');
+</script>
+    <p th:text="'Logout, ' + ${test} + '!'" />
+    <div th:include="footer :: bottom"></div>
+</body>
+</html>
